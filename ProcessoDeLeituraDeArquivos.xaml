@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ProcessoDeLeituraDeArquivos" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,838" sap2010:WorkflowViewState.IdRef="ProcessoDeLeituraDeArquivos_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ama="clr-namespace:AtoS.MultiPartImagetoPDFConverter.Activities;assembly=AtoS.MultiPartImagetoPDFConverter.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ProcessoDeLeituraDeArquivos" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ama="clr-namespace:AtoS.MultiPartImagetoPDFConverter.Activities;assembly=AtoS.MultiPartImagetoPDFConverter.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_TextoOCRstring" Type="OutArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>964,1141</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ProcessoDeLeituraDeArquivos_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
       <x:String>System.Activities</x:String>
@@ -72,34 +80,34 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="376,773" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="376,1076" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="PastaDinamicaPDF" />
       <Variable x:TypeArguments="x:String" Name="NumeroDaMatricula" />
       <Variable x:TypeArguments="x:String" Name="ArquivoPrincipal" />
-      <Variable x:TypeArguments="x:String" Name="PastaDinamica" />
-      <Variable x:TypeArguments="x:String" Name="TextoOCRstring" />
+      <Variable x:TypeArguments="x:String" Name="FolderGlobal" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:GetEnvironmentFolder DisplayName="Get Environment Folder" FolderPath="[FolderGlobal]" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="Desktop" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[FolderGlobal]" />
     <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Digite o Número da Matrícula " Title="CAIXA DE AVISO">
       <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:String">[ArquivoPrincipal]</OutArgument>
+        <OutArgument x:TypeArguments="x:String">[NumeroDaMatricula]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign DisplayName="ContrucaoPastaTif" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[ArquivoPrincipal]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[PastaDinamica + NumeroDaMatricula]</InArgument>
+        <InArgument x:TypeArguments="x:String">[FolderGlobal+"\PastaTifs\"+NumeroDaMatricula + ".tif"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ama:MultiPartImageToPDF ContinueOnError="{x:Null}" Result="{x:Null}" DisplayName="Multi part image to PDF" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="MultiPartImageToPDF_1" ImageFilepath="[ArquivoPrincipal]" PDFFilepath="[PastaDinamicaPDF]" />
-    <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[ArquivoPrincipal]" sap:VirtualizedContainerService.HintSize="334,131" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[TextoOCRstring]">
+    <ama:MultiPartImageToPDF ContinueOnError="{x:Null}" Result="{x:Null}" DisplayName="Multi part image to PDF" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="MultiPartImageToPDF_1" ImageFilepath="[ArquivoPrincipal]" PDFFilepath="PdfsConvertidos\arquivopdf.pdf" />
+    <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="PdfsConvertidos\arquivopdf.pdf" sap:VirtualizedContainerService.HintSize="334,131" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[out_TextoOCRstring]">
       <ui:ReadPDFWithOCR.OCREngine>
         <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
           <ActivityFunc.Argument>
@@ -109,5 +117,6 @@
         </ActivityFunc>
       </ui:ReadPDFWithOCR.OCREngine>
     </ui:ReadPDFWithOCR>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[out_TextoOCRstring]" />
   </Sequence>
 </Activity>

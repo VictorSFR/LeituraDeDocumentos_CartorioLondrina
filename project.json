@@ -4,6 +4,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "AtoS.MultiPartImagetoPDFConverter.Activities": "[1.0.0]",
+    "UiPath.Box.Activities": "[1.1.6]",
     "UiPath.Excel.Activities": "[2.10.4]",
     "UiPath.Mail.Activities": "[1.10.5]",
     "UiPath.OmniPage.Activities": "[1.7.1]",
@@ -28,7 +29,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
