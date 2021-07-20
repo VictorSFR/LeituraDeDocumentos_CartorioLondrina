@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="964,701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="985,801" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
       <x:String>System.Activities</x:String>
@@ -80,6 +80,15 @@
   <Flowchart sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="TextoOCRstring" />
+      <Variable x:TypeArguments="x:String" Name="anotacao" />
+      <Variable x:TypeArguments="x:String" Name="titulo" />
+      <Variable x:TypeArguments="x:String" Name="onus" />
+      <Variable x:TypeArguments="x:String" Name="proprietario" />
+      <Variable x:TypeArguments="x:String" Name="documento" />
+      <Variable x:TypeArguments="x:String" Name="adquirente" />
+      <Variable x:TypeArguments="x:String" Name="imovel" />
+      <Variable x:TypeArguments="x:String" Name="valor" />
+      <Variable x:TypeArguments="x:String" Name="benfeitorias" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -95,31 +104,14 @@
     <FlowStep x:Name="__ReferenceID0">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">200,297</av:Point>
-          <av:Size x:Key="ShapeSize">200,66</av:Size>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Formulario" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </Sequence>
-    </FlowStep>
-    <FlowStep x:Name="__ReferenceID1">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,214.5</av:Point>
           <av:Size x:Key="ShapeSize">200,51</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,265.5 300,297</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">300,265.5 300,294.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke FiltroRegex workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="FiltroRegex.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_Texto">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TextoOCRstring" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Texto">[TextoOCRstring]</InArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="out_Anotacao" />
           <OutArgument x:TypeArguments="x:String" x:Key="out_Titulo" />
           <OutArgument x:TypeArguments="x:String" x:Key="out_Onus" />
@@ -137,7 +129,50 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
       <FlowStep.Next>
-        <x:Reference>__ReferenceID0</x:Reference>
+        <FlowStep x:Name="__ReferenceID1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,294.5</av:Point>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Formulario workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Formulario.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Anotacao">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="anotacao" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Titulo">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="titulo" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Onus">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="onus" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Proprietario">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="proprietario" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Documento">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="documento" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Adquirente">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="adquirente" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Imovel">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="imovel" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Valor">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="valor" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Benfeitorias">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="benfeitorias" />
+              </InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+        </FlowStep>
       </FlowStep.Next>
     </FlowStep>
     <FlowStep x:Name="__ReferenceID2">
@@ -150,14 +185,13 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ProcessoDeLeituraDeArquivos workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="ProcessoDeLeituraDeArquivos.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_TextoOCRstring">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="TextoOCRstring" />
-          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_TextoOCRstring">[TextoOCRstring]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
       <FlowStep.Next>
-        <x:Reference>__ReferenceID1</x:Reference>
+        <x:Reference>__ReferenceID0</x:Reference>
       </FlowStep.Next>
     </FlowStep>
+    <x:Reference>__ReferenceID1</x:Reference>
   </Flowchart>
 </Activity>
