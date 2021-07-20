@@ -1,0 +1,291 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequência2" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="594.666666666667,6543.33333333333" sap2010:WorkflowViewState.IdRef="Sequência2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="43">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>AtoS.MultiPartImagetoPDFConverter.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.OmniPage.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>Klippa.OCRAPI</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>Klippa.OCRAPI.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.Abbyy.Core.FlexiCapture</x:String>
+      <x:String>UiPath.Abbyy.Core.FlexiCapture.Enums</x:String>
+      <x:String>UiPath.Abbyy.Core.FlexiCapture.ValidationStationAdapters</x:String>
+      <x:String>UiPath.Abbyy.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>AtoS.MultiPartImagetoPDFConverter.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>KlippaOCRAPI</AssemblyReference>
+      <AssemblyReference>UiPath.Abbyy.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Abbyy.Core</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequência2" sap:VirtualizedContainerService.HintSize="604.666666666667,6478.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562.666666666667,6386.66666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Directory.GetFiles(&quot;C:\Users\GR1\Desktop\matricula2&quot;)]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="526,6248" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Texto" />
+              <Variable x:TypeArguments="x:Boolean" Name="Anotacao" />
+              <Variable x:TypeArguments="x:Boolean" Name="Titulo" />
+              <Variable x:TypeArguments="x:Boolean" Name="Onus" />
+              <Variable x:TypeArguments="x:Boolean" Name="Proprietario" />
+              <Variable x:TypeArguments="x:Boolean" Name="Doc" />
+              <Variable x:TypeArguments="x:Boolean" Name="Adquirente" />
+              <Variable x:TypeArguments="x:Boolean" Name="Benfeitorias" />
+              <Variable x:TypeArguments="x:Boolean" Name="Valor" />
+              <Variable x:TypeArguments="x:Boolean" Name="Imovel" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Anotacaotxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Titulotxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Onustxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Proprietariotxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Doctxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="AdquirinteTxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Imoveltxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Valortxt" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Benfeirotiratxt" />
+              <Variable x:TypeArguments="x:String" Name="Texto1" />
+              <Variable x:TypeArguments="scg:List(x:String)" Name="Lista" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[item]" sap:VirtualizedContainerService.HintSize="484,130.666666666667" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="300" Range="ALL" Text="[Texto]">
+              <ui:ReadPDFWithOCR.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <uoa:OmniPageOCR Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" BundleType="Basic" ComputeSkewAngle="False" DisplayName="OmniPage OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OmniPageOCR_2" Image="[Image]" />
+                </ActivityFunc>
+              </ui:ReadPDFWithOCR.OCREngine>
+            </ui:ReadPDFWithOCR>
+            <ui:IsMatch BuilderPattern="(?:ANOTAÇÕES:)+" DisplayName="Anotações" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_1" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;ANOTAÇÕES:&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;Pelo menos um (1 ou mais)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?:ANOTAÇÕES:)+" RegexOption="IgnoreCase" Result="[Anotacao]" />
+            <Assign sap:VirtualizedContainerService.HintSize="484,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(x:String)">[Lista]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(x:String)">[new List( of string)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <If Condition="[Anotacao]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_5">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(?&lt;=ANOTAÇÕES:).*?((?=D\/VRC)|(?=EMOLUMENTOS))" DisplayName="Anotações" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=ANOTAÇÕES:).*?((?=D\\\/VRC)|(?=EMOLUMENTOS))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=ANOTAÇÕES:).*?((?=D\/VRC)|(?=EMOLUMENTOS))" RegexOption="IgnoreCase" Result="[Anotacaotxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[Anotacaotxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[Anotacaotxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch BuilderPattern="(?:TITULO:)+" DisplayName="Titulo" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_2" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;TITULO:&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;Pelo menos um (1 ou mais)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?:TITULO:)+" RegexOption="IgnoreCase" Result="[Titulo]" />
+            <If Condition="[Titulo]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_6">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(?&lt;=TITULO:).*?(?=Documento)" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=TITULO:).*?(?=Documento)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=TITULO:).*?(?=Documento)" RegexOption="IgnoreCase" Result="[Titulotxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[Titulotxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="[Titulotxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch BuilderPattern="(?:Ônus:)+" DisplayName="Onus" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_3" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;Ônus:&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;Pelo menos um (1 ou mais)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?:Ônus:)+" RegexOption="IgnoreCase" Result="[Onus]" />
+            <If Condition="[Onus]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_7">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(?&lt;=Ônus:).*?((?=TÍTULO)|(?=FORMA do ))" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=Ônus:).*?((?=TÍTULO)|(?=FORMA do ))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=Ônus:).*?((?=TÍTULO)|(?=FORMA do ))" RegexOption="IgnoreCase" Result="[Onustxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="[Onustxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[Onustxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch BuilderPattern="(?:PROPRIET[ÁAa\s.:])+" DisplayName="Proprietario" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_4" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;PROPRIET[ÁAa\\s.:]&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;Pelo menos um (1 ou mais)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=":PROPRIET[ÁAa\s.:]" RegexOption="IgnoreCase" Result="[Proprietario]" />
+            <If Condition="[Proprietario]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(?&lt;=PROPRIET[ÁAa\s.:])(.?)(?=(TRANSC)|(REGISTRO)|(DOU)|(APRESENTADO))" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_4" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=PROPRIET[ÁAa\\s.:])(.?)(?=(TRANSC)|(REGISTRO)|(DOU)|(APRESENTADO))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=PROPRIET[ÁAa\s.:])(.?)(?=(TRANSC)|(REGISTRO)|(DOU)|(APRESENTADO))" RegexOption="IgnoreCase" Result="[Proprietariotxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[Proprietariotxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_4" Item="[Proprietariotxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch BuilderPattern="DOCU+" DisplayName="Documentos Apresentados" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_5" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Avançado&quot;,&quot;OperationValue&quot;:&quot;DOCU&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;Pelo menos um (1 ou mais)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="DOCU+" RegexOption="IgnoreCase" Result="[Doc]" />
+            <If Condition="[Doc]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(?&lt;=DOCU)(.*?)(?=(TRANSC)|(REGISTRO)|(DOU))" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_5" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=DOCU)(.*?)(?=(TRANSC)|(REGISTRO)|(DOU))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=DOCU)(.*?)(?=(TRANSC)|(REGISTRO)|(DOU))" RegexOption="IgnoreCase" Result="[Doctxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[Doctxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_5" Item="[Doctxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch BuilderPattern="(?:ADQUIREN)+" DisplayName="Adquirente" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_6" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;ADQUIREN&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;Pelo menos um (1 ou mais)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?:ADQUIREN)+" RegexOption="IgnoreCase" Result="[Adquirente]" />
+            <If Condition="[Adquirente]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(?&lt;=ADQUIREN)(.*?)(?=(TITULO))" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_6" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=ADQUIREN)(.*?)(?=(TITULO))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=ADQUIREN)(.*?)(?=(TITULO))" RegexOption="IgnoreCase" Result="[AdquirinteTxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="[AdquirinteTxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_6" Item="[AdquirinteTxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch DisplayName="Imovel" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_7" Input="[Texto]" IsBuilderTabModified="False" Pattern="Im.vel:" RegexOption="IgnoreCase, Compiled" Result="[Imovel]" />
+            <If Condition="[Imovel]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(Im.vel:).*?((?=Benfeitorias)|(?=Propriet.rio))" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_7" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(Im.vel:).*?((?=Benfeitorias)|(?=Propriet.rio))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(Im.vel:).*?((?=Benfeitorias)|(?=Propriet.rio))" RegexOption="IgnoreCase" Result="[Imoveltxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="[Imoveltxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_7" Item="[Imoveltxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch DisplayName="Valor" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_8" Input="[Texto]" IsBuilderTabModified="False" Pattern="valor:" RegexOption="IgnoreCase, Compiled" Result="[Valor]" />
+            <If Condition="[Valor]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_8">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(valor:).*?((?=Documentos Apresentados)|(?=forma))" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_8" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(valor:).*?((?=Documentos Apresentados)|(?=forma))&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(valor:).*?((?=Documentos Apresentados)|(?=forma))" RegexOption="IgnoreCase" Result="[Valortxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[Valortxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_8" Item="[Valortxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:IsMatch DisplayName="Benfeitoria" sap:VirtualizedContainerService.HintSize="484,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_9" Input="[Texto]" IsBuilderTabModified="False" Pattern="benfeitorias" RegexOption="IgnoreCase, Compiled" Result="[Benfeitorias]" />
+            <If Condition="[Benfeitorias]" sap:VirtualizedContainerService.HintSize="484,500" sap2010:WorkflowViewState.IdRef="If_9">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,315.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(?s)(?&lt;=benfeitorias).*?(?=Propriet.ria|Propriet.rio)" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_9" Input="[Texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=benfeitorias).*?(?=Propriet.ria|Propriet.rio)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=benfeitorias).*?(?=Propriet.ria|Propriet.rio)" RegexOption="IgnoreCase" Result="[Benfeirotiratxt]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[Benfeirotiratxt(0).tostring]" />
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Lista]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_9" Item="[Benfeirotiratxt(0).tostring]" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:WriteTextFile DisplayName="Write Text File" FileName="[item+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="484,135.333333333333" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[Lista.ToString]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
