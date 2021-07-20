@@ -68,7 +68,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ufa:FormActivity Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormFieldsOutputData="{x:Null}" FormTitle="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" DisableMaximizeButton="False" DisableMinimizeButton="False" DisplayName="Create Form" FormHeight="400" FormSchema="%[{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;alwaysEnabled&quot;:true,&quot;tableView&quot;:true},{&quot;label&quot;:&quot;Argument1&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;Argument1&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Anotação&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Anotação&quot;},{&quot;label&quot;:&quot;Titulo&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Titulo&quot;},{&quot;label&quot;:&quot;Onus&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Onus&quot;},{&quot;label&quot;:&quot;Proprietario&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Proprietario&quot;},{&quot;label&quot;:&quot;Documentos&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Documentos&quot;},{&quot;label&quot;:&quot;Adquirente&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Adquirente&quot;},{&quot;label&quot;:&quot;Imovel&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Imovel&quot;},{&quot;label&quot;:&quot;Valor&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Valor&quot;},{&quot;label&quot;:&quot;Benfeitorias&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Benfeitorias&quot;}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;../../assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;../../assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;../../assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="400" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="238,210.666666666667" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="False">
+    <ufa:FormActivity Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormFieldsOutputData="{x:Null}" FormTitle="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" DisableMaximizeButton="False" DisableMinimizeButton="False" DisplayName="Create Form" FormHeight="400" FormSchema="%[{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;alwaysEnabled&quot;:true,&quot;tableView&quot;:true},{&quot;label&quot;:&quot;Argument1&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;Argument1&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Anotação&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Anotação&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Titulo&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Titulo&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Onus&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Onus&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Proprietario&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Proprietario&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Documentos&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Documentos&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Adquirente&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Adquirente&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Imovel&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Imovel&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Valor&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Valor&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Benfeitorias&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;type&quot;:&quot;textfield&quot;,&quot;key&quot;:&quot;Benfeitorias&quot;,&quot;input&quot;:true}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;../../assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;../../assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;../../assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="400" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="238,210.666666666667" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="False">
       <ufa:FormActivity.Body>
         <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -86,33 +86,15 @@
         </ActivityAction>
       </ufa:FormActivity.DelayBody>
       <ufa:FormActivity.FormFieldsCollection>
-        <InArgument x:TypeArguments="x:String" x:Key="Anotação">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Anotacao" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Titulo">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Titulo" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Onus">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Onus" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Proprietario">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Proprietario" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Documentos">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Documentos" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Adquirente">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Adquirente" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Imovel">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Imovel" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Valor">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Valor" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="Benfeitorias">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Benfeitorias" />
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Anotação">[In_Anotacao]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Titulo">[In_Titulo]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Onus">[In_Onus]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Proprietario">[In_Proprietario]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Documentos">[In_Documentos]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Adquirente">[In_Adquirente]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Imovel">[In_Imovel]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Valor">[In_Valor]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="Benfeitorias">[In_Benfeitorias]</InArgument>
       </ufa:FormActivity.FormFieldsCollection>
     </ufa:FormActivity>
   </Sequence>
